@@ -1,0 +1,718 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .3s ease;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Futura ND';
+    src: url(../fonts/Futura-ND/futura-nd.ttf);
+}
+
+@font-face {
+    font-family: 'FuturaEF DemiBold';
+    src: url(../fonts/FuturaEF-DemiBold/FuturaEF-DemiBold.otf);
+}
+
+@font-face {
+    font-family: 'Futura Lt';
+    src: url(../fonts/Futura-LT/FuturaLT-Light.woff);
+}
+
+/* general css  */
+
+.black-btn {
+    font-family: 'FuturaEF DemiBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 140%;
+    color: #FFFFFF;
+    background: #111111;
+    border-radius: 53px;
+    border: 2px solid #111111;
+    padding: 10px 50px;
+}
+
+.black-btn:hover {
+    border: 2px solid #111111;
+    color: #111111;
+    background-color: transparent;
+}
+
+.grey-btn {
+    font-family: 'FuturaEF DemiBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000000;
+    border-radius: 53px;
+    padding: 10px 50px;
+    background: #B1B1B1;
+    border: 0px solid #000000;
+    display: inline-block;
+}
+
+.grey-btn:hover {
+    border: 1px solid #000000;
+    color: #111111;
+    background-color: transparent;
+}
+
+.ptb-20 {
+    padding: 20px 5%;
+}
+
+.ptb-50 {
+    padding: 50px 5%;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.section-heading {
+    font-family: 'Futura ND';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #000000;
+    padding-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.row .col {
+    flex: 1;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+/* header  */
+header {
+    padding: 20px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav .col {
+    flex: 1;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+}
+
+
+
+nav .icon {
+    text-align: center;
+}
+
+nav .icon p {
+    font-family: 'FuturaEF DemiBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 140%;
+    color: #000000;
+
+}
+
+
+
+.hero {
+    padding: 20px 5%;
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero .main h1 {
+    font-family: 'Futura ND';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 70px;
+    color: #000000;
+}
+
+.hero .main h2 {
+    font-family: 'Futura ND';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    color: #000000;
+    margin-bottom: 50px;
+
+}
+
+.myfuture h1 {
+    font-family: 'Futura ND';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 72px;
+    text-align: center;
+    color: #000000;
+}
+
+.myfuture p {
+    font-family: 'Futura Lt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 55px;
+    text-align: center;
+    color: #000000;
+    margin: 30px 0;
+}
+
+
+.unser {
+    padding: 50px 5% 0 5%;
+}
+
+.unser .black-btn {
+    font-size: 18px;
+}
+
+.unser .unser-heading {
+    font-family: 'Futura ND';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.unser p {
+    font-family: 'Futura Lt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 43px;
+    color: #000000;
+    margin: 25px 0;
+}
+
+.unser .row {
+    gap: 0px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.swiper-slide h2 {
+    font-family: 'Futura ND';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.swiper-slide p {
+    font-family: 'Futura Lt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.wecare .section-heading {
+    padding: 0;
+}
+
+.wecare .desc {
+    padding-top: 50px;
+    font-family: 'Futura Lt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: #000000;
+    width: 70%;
+    margin: auto;
+}
+
+.info {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    background: #D9D9D9;
+    text-align: center;
+}
+
+.info p {
+    font-family: 'FuturaEF DemiBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+    padding: 10px 0;
+}
+
+.sagen .card {
+    background: #D9D9D9;
+    border-radius: 60px;
+    padding: 10px 40px;
+}
+
+.sagen .card p {
+    font-family: 'Futura Lt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+    text-align: left;
+}
+
+.sagen .card span {
+    font-size: 16px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #111111 !important;
+}
+
+.newsletter .subheading {
+    font-family: 'Futura Lt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.newsletter .formsction {
+    padding: 15px 10px;
+    max-width: 800px;
+    /* width: 800px; */
+    margin: auto;
+    background: #D9D9D9;
+    border-radius: 60px;
+    display: inline-block;
+}
+
+::placeholder {
+    font-family: 'Futura ND';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    text-align: left;
+}
+
+.newsletter input[type='submit'] {
+    background: linear-gradient(0deg, #B9B9B9, #B9B9B9), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.newsletter input[type='submit']:hover {
+    background: #ffffff;
+    border: 1px solid #000000;
+
+}
+
+.newsletter input[type='email'] {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 60px;
+    padding: 10px;
+    /* width: 600px; */
+    max-width: 600px;
+}
+
+
+
+.newsletter .formdes {
+    font-family: 'Futura Lt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.flex-heart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social span {
+    font-family: 'Futura ND';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.social .row {
+    justify-content: flex-start;
+}
+
+footer {
+    background: #D9D9D9;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    font-family: 'Futura Lt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+footer h2 {
+    font-family: 'Futura ND';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.languages {
+    text-align: center;
+    padding: 10px;
+}
+
+.languages a {
+    font-family: 'Futura ND';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.mobile-none {
+    display: block;
+}
+
+.pc-none {
+    display: none;
+}
+
+.pc-none-btn {
+    display: none;
+}
+
+.unser-one {
+    background-image: url(../images/unser1.png);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 2%;
+    margin-bottom: 20px;
+}
+
+.unser-two {
+    background-image: url(../images/unser2.png);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 2%;
+    margin-bottom: 20px;
+}
+
+.unser-three {
+    background-image: url(../images/unser3.png);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 2%;
+}
+
+.unsermain h1 {
+    font-family: 'Futura Lt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 63px;
+    color: #000000;
+
+}
+/* tabs responsive code Iphone XR*/
+
+@media all and (min-width: 690px) {
+    .newsletter .formsction {
+        width: 800px;
+    }
+
+    .newsletter input[type='email'] {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .logo {
+        width: 170px;
+        margin-top: 25px;
+    }
+
+    nav .icon img {
+        width: 25px;
+    }
+
+    .hero {
+        background-position: 62%;
+    }
+
+    .hero .main h1 {
+        font-size: 40px;
+    }
+
+    .hero .main h2 {
+        font-size: 30px;
+    }
+
+    .black-btn {
+        font-size: 17px;
+        padding: 10px 20px;
+    }
+
+    .swiper-slide h2 {
+        font-size: 22px;
+    }
+
+    .myfuture h1 {
+        font-size: 40px;
+    }
+
+    .grey-btn {
+        font-size: 17px;
+        padding: 10px 20px;
+    }
+
+    .myfuture p {
+        font-size: 25px;
+        line-height: 45px;
+    }
+ 
+    .section-heading {
+        font-size: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .wecare .desc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sagen .card p {
+        font-size: 20px;
+    }
+
+    .newsletter .formsction {
+        max-width: 800px;
+    }
+
+    .newsletter input[type='email'] {
+        max-width: 600px;
+    }
+
+
+
+    .languages a {
+        font-size: 18px;
+    }
+
+    .mobile-none {
+        display: none;
+    }
+
+    .pc-none {
+        display: block !important;
+    }
+
+    .pc-none-btn {
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: 205px;
+        bottom: -118px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .newsletter input[type='submit'] {
+        padding: 10px;
+    }
+
+    .unser-one, .unser-three {
+        background-position: 80%;
+    }
+
+    .unser-two {
+        background-position: -70%;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+
+    nav .icon p {
+        font-size: 12px;
+    }
+
+    .onthetop {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    nav {
+        display: unset;
+    }
+
+    .flex {
+        gap: 10px;
+    }
+}
+/* tabs responsive code Surface pro 7 */
+@media only screen and (max-width:940px) {
+    .unser p {
+        font-size: 20px;
+        margin: 19px 0;
+    }
+   
+}
+
+@media only screen and (max-width:992px) {
+
+    .hero .main h1 {
+        font-size: 40px;
+    }
+
+    .hero .main h2 {
+        font-size: 25px;
+    }
+
+    .hero .black-btn {
+        font-size: 17px;
+        padding: 10px 20px;
+    }
+
+    .br {
+        display: block;
+    }
+  
+}
